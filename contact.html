@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا | واعي انتساب</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* تنسيقات خاصة لصفحة التواصل فقط */
+        .contact-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .contact-card {
+            background-color: #ffffff;
+            border: 2px dashed #005f9c; /* حدود متقطعة باللون الأزرق */
+            border-radius: 15px;
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-style: solid; /* تحويل الحدود لخط متصل عند التمرير */
+        }
+
+        .icon-placeholder {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .phone-display {
+            font-size: 2.5rem;
+            color: #e27713; /* اللون البرتقالي للرقم */
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace; /* خط مميز للأرقام */
+            margin: 20px 0;
+            direction: ltr; /* لضمان ظهور الرقم بشكل صحيح */
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">واعي انتساب</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">عن المشروع</a></li>
+            <li><a href="team.html">الفريق</a></li>
+            <li><a href="contact.html" class="active">تواصل معنا</a></li>
+        </ul>
+    </nav>
+
+    <div class="header" style="padding: 20px;">
+        <h1>تواصل مع الفريق</h1>
+    </div>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>فريق الحيكي ميكي</h2>
+            <p>تواصل معنا الان.</p>
+
+            <div class="contact-wrapper">
+                <div class="contact-card">
+                    <div class="icon-placeholder">📞</div>
+                    <p class="subtitle">تواصل معنا عبر الهاتف أو واتساب</p>
+                    
+                    <div class="phone-display">01095522676    المنظم عبوض</div>
+                    
+                    <a href="https://wa.me/+201095522676" class="button">ابدأ المحادثة</a>
+                </div>
+            </div>
+
+            <br>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; حيكي ميكي.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
